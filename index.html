@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +11,38 @@
 </head>
 <body>
     <header class="header">
-        <div class="header_brand">
-            <img  class="brand_logo" src="assets/images/logo-ea.jfif" alt="Logo EA">
-        </div>        
-        <i id="toggleTheme" class="bi bi-sun"></i>
+        <nav class="header__nav">
+            <ul class="menu menu--principal">
+             <li class="menu__item">
+                 <a class="menu__link active" href="#home">
+                    <span class="menu__text">Home</span>
+                 </a>
+             </li>
+             <li class="menu__item">
+                 <a class="menu__link" href="#projetos">
+                    <span class="menu__text">Projetos</span>
+                 </a>
+             </li>
+             <li class="menu__item">
+                 <a class="menu__link" href="#sobre">
+                     <span class="menu__text">Sobre</span>
+                 </a>
+             </li>
+             <li class="menu__item">
+                 <a class="menu__link" href="#contato">
+                     <span class="menu__text">Contato</span>
+                 </a>
+             </li>
+            </ul> 
+         </nav>
+        <div class="header__brand">
+            <img  class="brand__logo" src="assets/images/logo-ea.jfif" alt="Logo EA">
+        </div> 
+        <div class="header__toggle">
+            <i id="toggleTheme" class="bi bi-sun"></i>
+        </div>         
     </header>
-    <nav>
+    <nav class="nav--mobile">
        <ul class="menu menu--mobile">
         <li class="menu__item">
             <a class="menu__link active" href="#home">
@@ -44,6 +70,12 @@
         </li>
        </ul> 
     </nav>
-    <h1>Fabiana Marques</h1>
+    <main></main>
+    <footer>
+        <p>
+          © 2024. Portfólio desenvolvido para fins educativos no Lab "Construindo seu Portfolio Front-end do Zero" da 
+          <a href="https://github.com/2016Fabi/fabiana-portfolio">Fabiana Marques</a>.
+        </p>
+    </footer>
 </body>
 </html>
